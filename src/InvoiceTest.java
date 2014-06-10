@@ -27,6 +27,6 @@ public class InvoiceTest
                 int quantity = input.nextInt();
         
         System.out.printf("Invoice total is: $%.2f\n", 
-                invoice1.getInvoiceAmount(int, double));
+                invoice1.getInvoiceAmount(int quantity, double price));
     }
 }
