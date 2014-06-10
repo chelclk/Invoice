@@ -8,18 +8,25 @@ public class InvoiceTest
 {
     public static void main( String[] args )
     { 
-        Invoice invoice1 = new Invoice;
+      
+        Invoice invoice1 = new Invoice();
         
         Scanner input = new Scanner (System.in);
         
-        String partNum = input.nextLine();
-        System.out.println( "Please enter part number: %s\n",
-                invoice1.setPartNum( partNum ) );
-        System.out.println( "Please enter a part description: %s\n",
-                invoice1.setPartDesc( partDesc) );
         
+        System.out.println( "Please enter part number: ");
+                String partNum = input.next();
+                
+        System.out.println( "Please enter a part description: ");
+                String partDesc = input.next();
         
-        System.out.printf("Balance is: $%.2f\n", 
-                account1.getBalance());
+        System.out.println( "Please enter price: ");
+                double price = input.nextDouble();
+                
+        System.out.println( "Please enter quantity: ");
+                int quantity = input.nextInt();
+        
+        System.out.printf("Invoice total is: $%.2f\n", 
+                invoice1.getInvoiceAmount(int, double));
     }
 }

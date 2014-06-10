@@ -5,22 +5,17 @@
 
 public class Invoice {
 
-    private double invoiceAmount;
-    private String partDesc;
-    private String partNum;
-    private int quantity;
-    private double price;
+private int quantity;
+private double price;
+private double invoiceAmount;
 
     //constructor
     public Invoice() {
         
-        
-    }
-    public String setPartNum(){
-        partNum = 
+        invoiceAmount = 0;
     }
 
-    public double getInvoiceAmount() {
+    public double getInvoiceAmount(int quantity, double price) {
         invoiceAmount = price * quantity;
         return invoiceAmount;
     }
