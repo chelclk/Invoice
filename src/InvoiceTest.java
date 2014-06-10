@@ -15,7 +15,7 @@ public class InvoiceTest
         
         
         System.out.println( "Please enter part number: ");
-                String partNum = input.next();
+                String part = input.next();
                 
         System.out.println( "Please enter a part description: ");
                 String partDesc = input.next();
@@ -25,8 +25,12 @@ public class InvoiceTest
                 
         System.out.println( "Please enter quantity: ");
                 int quantity = input.nextInt();
+                
+        invoice1.setPartNum(part);
+        
+        System.out.println(quantity + "  " + part + "  " + partDesc + "  " + "$"+price);
         
         System.out.printf("Invoice total is: $%.2f\n", 
-                invoice1.getInvoiceAmount(int quantity, double price));
+                invoice1.getInvoiceAmount(quantity, price));
     }
 }
