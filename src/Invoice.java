@@ -12,12 +12,9 @@ public class Invoice {
     private double price;
 
     //constructor
-    public Invoice(double initialBalance) {
-        if (initialBalance >= 0.0) {
-            invoiceAmount = initialBalance;
-        } else {
-            invoiceAmount = 0;
-        }
+    public Invoice() {
+        
+        
     }
     public String setPartNum(){
         partNum = 
